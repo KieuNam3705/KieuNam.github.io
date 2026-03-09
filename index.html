@@ -17,9 +17,9 @@
       --border: rgba(0,0,0,0.1);
       --text: #1a1a1a;
       --muted: #666666;
-      --accent: #c8f06e;
-      --accent2: #5bf0c4;
-      --accent-dim: rgba(200,240,110,0.12);
+      --accent: #000000;
+      --accent2: #333333;
+      --accent-dim: rgba(0,0,0,0.12);
       --radius: 14px;
       --font-display: 'DM Serif Display', Georgia, serif;
       --font-body: 'DM Sans', sans-serif;
@@ -119,14 +119,14 @@
       content: '';
       position: absolute;
       width: 700px; height: 700px;
-      background: radial-gradient(circle, rgba(200,240,110,0.08) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(0,0,0,0.08) 0%, transparent 70%);
       top: -200px; right: -200px;
       pointer-events: none;
     }
     .hero-blob2 {
       position: absolute;
       width: 500px; height: 500px;
-      background: radial-gradient(circle, rgba(91,240,196,0.06) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(50,50,50,0.06) 0%, transparent 70%);
       bottom: -100px; left: -100px;
       pointer-events: none;
     }
@@ -216,7 +216,7 @@
       background: var(--accent);
       color: #ffffff;
     }
-    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(200,240,110,0.25); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
     .btn-ghost {
       background: transparent;
       color: var(--text);
@@ -319,7 +319,7 @@
       padding: 32px 28px;
       transition: border-color 0.3s, transform 0.3s;
     }
-    .skill-group:hover { border-color: rgba(200,240,110,0.3); transform: translateY(-4px); }
+    .skill-group:hover { border-color: rgba(0,0,0,0.3); transform: translateY(-4px); }
     .skill-group-title {
       font-family: var(--font-mono);
       font-size: 0.78rem;
@@ -375,7 +375,7 @@
       flex-direction: column;
       transition: border-color 0.3s, transform 0.3s;
     }
-    .project-card:hover { border-color: rgba(200,240,110,0.35); transform: translateY(-6px); }
+    .project-card:hover { border-color: rgba(0,0,0,0.35); transform: translateY(-6px); }
 
     .project-thumb {
       height: 180px;
@@ -390,8 +390,8 @@
       position: relative;
       overflow: hidden;
     }
-    .proj1 { background: linear-gradient(135deg, #c8f06e 0%, #a8d94e 100%); }
-    .proj2 { background: linear-gradient(135deg, #5bf0c4 0%, #3dd4a8 100%); }
+    .proj1 { background: linear-gradient(135deg, #333333 0%, #1a1a1a 100%); }
+    .proj2 { background: linear-gradient(135deg, #4a4a4a 0%, #2a2a2a 100%); }
     .proj3 { background: linear-gradient(135deg, #f0a35b 0%, #e88a3c 100%); }
 
     .project-thumb::after {
@@ -590,7 +590,7 @@
       </p>
       <div class="hero-cta">
         <a href="#projects" class="btn btn-primary">View Projects <i class="fa-solid fa-arrow-right"></i></a>
-        <a href="https://drive.google.com/file/d/16LhrJyFWIm-0ZhtWewxzMXLrNAYxCRfy/view?usp=sharing" target="_blank" class="btn btn-ghost">Resume <i class="fa-solid fa-file-lines"></i></a>
+        <a href="https://drive.google.com/file/d/1cKqamRYUnGOeOaQEaZFcJqFkNycBwwdZ/view?usp=sharing" target="_blank" class="btn btn-ghost">Resume <i class="fa-solid fa-file-lines"></i></a>
       </div>
       <div class="hero-social">
         <a href="mailto:namhoaikieu009@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
@@ -723,7 +723,7 @@
           <div class="project-thumb proj2">StoreApp</div>
           <div class="project-body">
             <h3 class="project-name">Store Management Web App</h3>
-            <p class="project-desc">A full-stack web application managing retail store workflows, including POS, admin dashboard for inventory, and a customer portal.</p>
+            <p class="project-desc">A  web application managing retail store workflows, including POS, admin dashboard for inventory, and a customer portal.</p>
             <div class="project-tags">
               <span>ASP.NET MVC</span>
               <span>Razor View</span>
@@ -821,7 +821,7 @@
     }));
 
     // ── Typed text ───────────────────────────────────────────
-    const words = ['Software Engineer.', 'Full-Stack Developer.', 'ASP.NET Developer.'];
+    const words = ['Software Engineer.'];
     let wi = 0, ci = 0, deleting = false;
     const el = document.getElementById('typed');
 
